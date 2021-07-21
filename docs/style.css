@@ -1,0 +1,29 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+ul li, ul li div {
+  display: flex;
+  flex-direction: row; }
+
+ul {
+  border: 1px solid black;
+  width: 25%;
+  margin: 50px auto 0 auto; }
+  ul li {
+    justify-content: space-between;
+    padding: 10px;
+    height: 45px; }
+    ul li + li {
+      border-top: 1px solid black; }
+    ul li div {
+      align-items: center; }
+      ul li div input {
+        margin-right: 5px; }
+    ul li button {
+      all: initial; }
+      ul li button:hover {
+        cursor: move; }
+
+/*# sourceMappingURL=style.css.map */
