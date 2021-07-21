@@ -1,0 +1,46 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+%flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+$border-values: 1px solid black;
+
+ul {
+  border: $border-values;
+  width: 25%;
+  margin: 50px auto 0 auto;
+
+  li {
+    @extend %flex-row;
+    justify-content: space-between;
+    padding: 10px;
+    height: 45px;
+
+    & + li {
+      border-top: $border-values;
+    }
+
+    div {
+      @extend %flex-row;
+      align-items: center;
+      
+      input {
+        margin-right: 5px;
+      }
+    }
+
+    button {
+      all: initial;
+      
+      &:hover {
+        cursor: move;
+      }
+    }
+  }
+}
